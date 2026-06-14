@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samir Sheikh | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="profile">
+      <img src="profile.png" alt="Samir Sheikh" class="profile-img">
+      <h1 class="profile-name">Samir Sheikh</h1>
+      <p class="profile-title">Front-End Developer</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/samir-sheikh-frontend" target="_blank" title="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Samir-frontend" target="_blank" title="GitHub">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub">
+        </a>
+        <a href="mailto:samirshiekh0808@gmail.com" title="Email">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail">
+        </a>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#home" class="nav-link active"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="#about" class="nav-link"><span class="nav-icon">👤</span> About</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-icon">⚙</span> Skills</a></li>
+        <li><a href="#resume" class="nav-link"><span class="nav-icon">📄</span> Resume</a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-icon">💼</span> Projects</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-icon">✉</span> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<!-- Mobile Toggle -->
+<button class="mobile-toggle" id="mobileToggle" onclick="toggleSidebar()">☰</button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <p class="home-greeting">Hello, I'm</p>
+      <h2 class="home-name">Samir Sheikh</h2>
+      <div class="home-typed">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </div>
+      <p class="home-desc">
+        Passionate Front-End Developer from Rawatbhata, Rajasthan. I build modern,
+        responsive and interactive websites that solve real-world problems.
+      </p>
+      <div class="home-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2>About <span>Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="profile.png" alt="Samir Sheikh">
+      </div>
+      <div class="about-text">
+        <h3>Front-End Developer & CS Student</h3>
+        <p>
+          I am Samir Sheikh, a passionate Front-End Development student with a strong interest
+          in web design and programming. I enjoy creating responsive and user-friendly websites
+          using HTML, CSS, and JavaScript. My goal is to continuously improve my skills and
+          build real-world projects that solve practical problems.
+        </p>
+        <div class="about-info">
+          <div class="info-item"><span>Birthday:</span> 25 September 2007</div>
+          <div class="info-item"><span>Phone:</span> +91 9982035995</div>
+          <div class="info-item"><span>City:</span> Rawatbhata, Rajasthan</div>
+          <div class="info-item"><span>Email:</span> samirshiekh0808@gmail.com</div>
+          <div class="info-item"><span>Degree:</span> B.Tech (2nd Year)</div>
+          <div class="info-item"><span>Freelance:</span> Not Available</div>
+        </div>
+        <a href="mailto:samirshiekh0808@gmail.com" class="btn-primary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="section-header">
+      <h2>My <span>Skills</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skills-col">
+        <h3>Technical Skills</h3>
+        <div class="skill-item">
+          <div class="skill-meta"><span>HTML5</span><span>100%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="100%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>CSS3</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>React (Basic)</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h3>Professional Skills</h3>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Problem Solving</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Web Development</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Understanding Things</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Responsive Design</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume" class="section">
+    <div class="section-header">
+      <h2>My <span>Resume</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="resume-grid">
+      <div class="resume-col">
+        <h3 class="resume-col-title">🎓 Education</h3>
+        <div class="resume-item">
+          <div class="resume-year">2025 — Present</div>
+          <h4>B.Tech in Computer Science & Engineering</h4>
+          <p class="resume-place">Modi Institute of Technology, Kota, Rajasthan</p>
+          <p>Pursuing 2nd year of B.Tech in CSE. Focusing on web development and front-end technologies alongside core CS subjects.</p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-year">Completed</div>
+          <h4>Higher Secondary Education (12th)</h4>
+          <p class="resume-place">Rawatbhata, Rajasthan</p>
+          <p>Completed 12th grade with focus on Science and Mathematics.</p>
+        </div>
+      </div>
+      <div class="resume-col">
+        <h3 class="resume-col-title">💼 Internships</h3>
+        <div class="resume-item">
+          <div class="resume-year">2026</div>
+          <h4>Front-End Development Intern</h4>
+          <p class="resume-place">TechNova Internship Program</p>
+          <p>Completed web development tasks including responsive landing page, to-do app and personal portfolio using HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-year">2026</div>
+          <h4>Front-End Development Intern</h4>
+          <p class="resume-place">Saiket Systems</p>
+          <p>Built multiple front-end projects including quiz app, to-do list, product card and responsive layouts using HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-year">2026</div>
+          <h4>Web Development Intern</h4>
+          <p class="resume-place">HexSoftware</p>
+          <p>Worked on front-end development tasks, building responsive and interactive web pages.</p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-year">2026</div>
+          <h4>Frontend Development Intern</h4>
+          <p class="resume-place">Sysslan IT Solutions</p>
+          <p>Developed an Event Ticket Booking System as a major project using HTML, CSS and JavaScript with responsive design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="section-header">
+      <h2>My <span>Projects</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-btns">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('game', this)">Games</button>
+      <button class="filter-btn" onclick="filterProjects('app', this)">Apps</button>
+      <button class="filter-btn" onclick="filterProjects('clone', this)">Clones</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- PROJECT 1: Typing Speed Tester -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=220&fit=crop" alt="Typing Speed Tester">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/Typing-Speed-Tester-Game/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Typing Speed Tester</h4>
+          <p>Measures typing speed (WPM), accuracy and user performance in real time with interactive and responsive UI.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Advance Drawing App -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400&h=220&fit=crop" alt="Advance Drawing App">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/advanced-drawing-app/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Advance Drawing App</h4>
+          <p>A feature-rich drawing application built with HTML Canvas, CSS and JavaScript with multiple brush tools and colors.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Amazon Clone -->
+      <div class="project-card" data-category="clone">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=400&h=220&fit=crop" alt="Amazon Clone">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/amazon-clone/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+          <h4>Amazon Clone</h4>
+          <p>A pixel-perfect clone of Amazon's homepage built using only HTML and CSS with fully responsive design.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Calculator -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&h=220&fit=crop" alt="Calculator">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/calculator/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Calculator</h4>
+          <p>A simple and responsive calculator web app with clean UI that performs all basic arithmetic operations.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 5: Event Ticket Booking System -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=220&fit=crop" alt="Event Ticket Booking System">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/Event-Ticket-Booking-system/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Event Ticket Booking System</h4>
+          <p>A fully responsive front-end ticket booking system built for Sysslan IT Solutions internship with clean design.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 6: Register & Login Page -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1614854262318-831574f15f1f?w=400&h=220&fit=crop" alt="Register & Login Page">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/login-page/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Register & Login Page</h4>
+          <p>An animated and stylish login & register page with smooth transitions and modern design.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 7: Mini Code Editor -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=220&fit=crop" alt="Mini Code Editor">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/mini-code-editor/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Mini Code Editor</h4>
+          <p>A VS Code style mini code editor with real-time output preview built using HTML, CSS and JavaScript.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 8: Rock Paper Scissors -->
+      <div class="project-card" data-category="game">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1585504198199-20277593b94f?w=400&h=220&fit=crop" alt="Rock Paper Scissors">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/Rock-Paper-Scissor/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Rock Paper Scissors</h4>
+          <p>Interactive game with score tracking, win/lose/draw detection and fully responsive UI.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 9: Tic Tac Toe -->
+      <div class="project-card" data-category="game">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&h=220&fit=crop" alt="Tic Tac Toe">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/tic-tac-toe/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Tic Tac Toe</h4>
+          <p>A fun 2-player game with win detection, interactive UI and smooth gameplay experience.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 10: Responsive Landing Page ShopEase -->
+      <div class="project-card" data-category="clone">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=400&h=220&fit=crop" alt="ShopEase Landing Page">
+          <div class="project-overlay">
+            <a href=" https://samir-frontend.github.io/Responsive-Landing-Page-ShopEase/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Responsive Landing Page — ShopEase</h4>
+          <p>A fully responsive online shopping landing page with modern design, product cards and interactive features.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 11: Responsive Landing Page TechNova -->
+      <div class="project-card" data-category="clone">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=220&fit=crop" alt="TechNova Landing Page">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/Responsive-Landing-Page-Technova/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Responsive Landing Page — TechNova</h4>
+          <p>A modern tech company landing page with hero, about, services and contact sections — fully responsive.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 12: To-Do List App -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=220&fit=crop" alt="To-Do List App">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/To-Do-App/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>To-Do List App</h4>
+          <p>Task management app with priority system, filters, stats and localStorage for persistent data.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 13: Quiz App -->
+      <div class="project-card" data-category="app">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&h=220&fit=crop" alt="Quiz App">
+          <div class="project-overlay">
+            <a href="https://samir-frontend.github.io/Quiz-App/" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h4>Quiz App</h4>
+          <p>Web development quiz with multiple questions, score tracking, progress bar and result screen.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Contact <span>Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>Feel free to reach out for collaborations, internships or just a friendly chat about web development!</p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="cc-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <p>Rawatbhata, Rajasthan, India</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>samirshiekh0808@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 9982035995</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <input type="text" id="cname" placeholder="Your Name">
+        <input type="email" id="cemail" placeholder="Your Email">
+        <input type="text" id="csubject" placeholder="Subject">
+        <textarea id="cmessage" rows="5" placeholder="Your Message"></textarea>
+        <button onclick="sendMessage()">Send Message ✉</button>
+        <p id="contactMsg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Designed & Developed by <span>Samir Sheikh</span> &copy; 2026</p>
+    <p class="footer-sub">Front-End Developer | Rawatbhata, Rajasthan</p>
+  </footer>
+
+</main>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
