@@ -37,7 +37,7 @@ This portfolio provides an interactive and professional way to explore my work a
 🔗 Live Demo
 
 
-👉 Add your live demo link here
+👉 https://samir-frontend.github.io/Personal-Portfolio/
 
 
 
